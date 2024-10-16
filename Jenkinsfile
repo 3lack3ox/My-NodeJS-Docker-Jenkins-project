@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Clone Repository') {
       steps {
-        git branch: 'main', URL: 'https://github.com/3lack3ox/My-NodeJS-Docker-Jenkins-project.git'
+        git branch: 'main', url: 'https://github.com/3lack3ox/My-NodeJS-Docker-Jenkins-project.git'
       }
     }
     stage('Build Docker Image') {
