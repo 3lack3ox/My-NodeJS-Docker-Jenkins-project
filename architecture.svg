@@ -1,0 +1,115 @@
+<svg width="100%" viewBox="0 0 680 740" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="740" fill="#ffffff" rx="12"/>
+
+  <!-- DEVELOPER lane -->
+  <rect x="30" y="30" width="620" height="110" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text font-size="11" font-weight="500" x="46" y="52" fill="#888780">DEVELOPER</text>
+
+  <!-- GITHUB ACTIONS lane -->
+  <rect x="30" y="158" width="620" height="110" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text font-size="11" font-weight="500" x="46" y="178" fill="#888780">GITHUB ACTIONS</text>
+
+  <!-- DOCKER HUB lane -->
+  <rect x="30" y="286" width="620" height="110" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text font-size="11" font-weight="500" x="46" y="306" fill="#888780">DOCKER HUB</text>
+
+  <!-- EC2 lane -->
+  <rect x="30" y="414" width="620" height="110" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text font-size="11" font-weight="500" x="46" y="434" fill="#888780">AWS EC2</text>
+
+  <!-- USERS lane -->
+  <rect x="30" y="542" width="620" height="110" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text font-size="11" font-weight="500" x="46" y="562" fill="#888780">USERS / CLIENTS</text>
+
+  <!-- DEVELOPER: Code commit (purple) -->
+  <rect x="80" y="60" width="130" height="56" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="145" y="83" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Code commit</text>
+  <text font-size="12" x="145" y="101" text-anchor="middle" dominant-baseline="central" fill="#534AB7">Push to main branch</text>
+
+  <!-- GITHUB ACTIONS: Build & Test (blue) -->
+  <rect x="80" y="187" width="130" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="145" y="210" text-anchor="middle" dominant-baseline="central" fill="#0C447C">Build &amp; Test</text>
+  <text font-size="12" x="145" y="228" text-anchor="middle" dominant-baseline="central" fill="#185FA5">Docker build + Jest</text>
+
+  <!-- GITHUB ACTIONS: Tag image (blue) -->
+  <rect x="270" y="187" width="130" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="335" y="210" text-anchor="middle" dominant-baseline="central" fill="#0C447C">Tag image</text>
+  <text font-size="12" x="335" y="228" text-anchor="middle" dominant-baseline="central" fill="#185FA5">Short Git SHA</text>
+
+  <!-- GITHUB ACTIONS: Push image (blue) -->
+  <rect x="460" y="187" width="130" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="525" y="210" text-anchor="middle" dominant-baseline="central" fill="#0C447C">Push image</text>
+  <text font-size="12" x="525" y="228" text-anchor="middle" dominant-baseline="central" fill="#185FA5">To Docker Hub</text>
+
+  <!-- DOCKER HUB: Image registry (teal) -->
+  <rect x="270" y="315" width="160" height="56" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="350" y="338" text-anchor="middle" dominant-baseline="central" fill="#085041">Image registry</text>
+  <text font-size="12" x="350" y="356" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">3lack3ox/my-node-app</text>
+
+  <!-- EC2: SSH deploy (amber) -->
+  <rect x="130" y="443" width="130" height="56" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="195" y="466" text-anchor="middle" dominant-baseline="central" fill="#633806">SSH deploy</text>
+  <text font-size="12" x="195" y="484" text-anchor="middle" dominant-baseline="central" fill="#854F0B">appleboy/ssh-action</text>
+
+  <!-- EC2: Docker container (teal) -->
+  <rect x="340" y="443" width="200" height="56" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="440" y="466" text-anchor="middle" dominant-baseline="central" fill="#085041">Docker container</text>
+  <text font-size="12" x="440" y="484" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Node.js app :3000</text>
+
+  <!-- USERS: Health check (green) -->
+  <rect x="130" y="571" width="130" height="56" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="195" y="594" text-anchor="middle" dominant-baseline="central" fill="#27500A">Health check</text>
+  <text font-size="12" x="195" y="612" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">HTTP 200 on :3000</text>
+
+  <!-- USERS: Browser (gray) -->
+  <rect x="400" y="571" width="160" height="56" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text font-size="14" font-weight="500" x="480" y="594" text-anchor="middle" dominant-baseline="central" fill="#2C2C2A">Browser</text>
+  <text font-size="12" x="480" y="612" text-anchor="middle" dominant-baseline="central" fill="#444441">http://&lt;EC2-IP&gt;:3000</text>
+
+  <!-- ARROWS -->
+  <!-- Commit → Build & Test -->
+  <line x1="145" y1="116" x2="145" y2="186" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- Build → Tag -->
+  <line x1="210" y1="215" x2="269" y2="215" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- Tag → Push -->
+  <line x1="400" y1="215" x2="459" y2="215" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- Push → Docker Hub -->
+  <line x1="480" y1="243" x2="420" y2="314" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- Docker Hub → SSH deploy (L-bend) -->
+  <path d="M350 371 L350 400 L195 400 L195 442" fill="none" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- Docker Hub → Docker Container -->
+  <line x1="390" y1="371" x2="420" y2="442" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- SSH deploy → Health check -->
+  <line x1="195" y1="499" x2="195" y2="570" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- Docker Container → Browser -->
+  <line x1="460" y1="499" x2="470" y2="570" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- ARROW LABELS -->
+  <text font-size="11" x="230" y="208" text-anchor="middle" fill="#888780">on pass</text>
+  <text font-size="11" x="430" y="208" text-anchor="middle" fill="#888780">SHA tag</text>
+  <text font-size="11" x="504" y="290" text-anchor="middle" fill="#888780">push</text>
+  <text font-size="11" x="270" y="397" text-anchor="middle" fill="#888780">pull</text>
+  <text font-size="11" x="375" y="397" text-anchor="middle" fill="#888780">pull</text>
+
+  <!-- LEGEND -->
+  <rect x="30" y="668" width="620" height="54" rx="8" fill="none" stroke="#D3D1C7" stroke-width="0.5"/>
+  <rect x="50"  y="682" width="12" height="12" rx="2" fill="#AFA9EC"/>
+  <text font-size="11" x="68"  y="692" fill="#5F5E5A">Source control</text>
+  <rect x="170" y="682" width="12" height="12" rx="2" fill="#85B7EB"/>
+  <text font-size="11" x="188" y="692" fill="#5F5E5A">CI/CD pipeline</text>
+  <rect x="300" y="682" width="12" height="12" rx="2" fill="#5DCAA5"/>
+  <text font-size="11" x="318" y="692" fill="#5F5E5A">Registry / container</text>
+  <rect x="450" y="682" width="12" height="12" rx="2" fill="#FAC775"/>
+  <text font-size="11" x="468" y="692" fill="#5F5E5A">Deployment</text>
+  <rect x="50"  y="704" width="12" height="12" rx="2" fill="#97C459"/>
+  <text font-size="11" x="68"  y="714" fill="#5F5E5A">Health check</text>
+  <rect x="170" y="704" width="12" height="12" rx="2" fill="#B4B2A9"/>
+  <text font-size="11" x="188" y="714" fill="#5F5E5A">End user access</text>
+</svg>
