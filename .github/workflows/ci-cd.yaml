@@ -64,7 +64,9 @@ jobs:
       # Post-deploy health check
       - name: Post-deploy health check
         run: |
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://${{ secrets.EC2_HOST }}:3000)
+          echo "Waiting for service to start..."
+          sleep 10
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 http://${{ secrets.EC2_HOST }}:3000)
           if [ "$STATUS" != "200" ]; then
             echo "Deployment failed with status $STATUS"
             exit 1
