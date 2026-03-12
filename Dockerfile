@@ -11,6 +11,10 @@ RUN npm install
 # Copy the application code
 COPY . .
 
+# Create a non-root user
+RUN useradd -m appuser
+USER appuser
+
 # Expose port 3000 for the app
 EXPOSE 3000
 
