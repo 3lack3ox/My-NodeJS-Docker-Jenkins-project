@@ -51,7 +51,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            IMAGE_TAG=${{ github.sha::7 }}
+            IMAGE_TAG=${GITHUB_SHA::7}
             docker pull 3lack3ox/my-node-app:$IMAGE_TAG
             docker stop my-node-app || true
             docker rm my-node-app || true
