@@ -88,28 +88,7 @@ The GitHub Actions pipeline triggers on every push or pull request to `main` and
 
 ## Architecture
 
-```
-   +--------------------+
-   |   GitHub Actions   |
-   |  (CI/CD Pipeline)  |
-   +---------+----------+
-             |
-             v
-   +--------------------+
-   |     Docker Hub     |
-   |  (Image Registry)  |
-   +---------+----------+
-             |
-             v
-   +--------------------+
-   |        EC2         |
-   |  Docker Container  |
-   |   Node.js App      |
-   +--------------------+
-             |
-             v
-        Users/Clients
-```
+![CI/CD Architecture Diagram](architecture.svg)
 
 ---
 
